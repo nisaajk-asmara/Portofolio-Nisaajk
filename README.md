@@ -104,6 +104,14 @@ src/
 
 This structure makes new projects, publications, and experience easier to add without redesigning the website.
 
+## Deploying on GitHub Pages
+
+The site is exported as a static Next.js site and deployed automatically to:
+
+https://nisaajk-asmara.github.io/Portofolio-Nisaajk/
+
+In the repository's **Settings → Pages**, set the build and deployment source to **GitHub Actions**. Each push to `main` then builds and deploys the site through `.github/workflows/deploy.yml`.
+
 ## Adding a New Project
 
 1. Add project screenshots to:

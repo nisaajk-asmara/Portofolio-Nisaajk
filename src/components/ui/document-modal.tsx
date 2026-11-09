@@ -2,6 +2,7 @@
 
 import { ArrowUpRight, X } from "lucide-react";
 import Image from "next/image";
+import { withBasePath } from "@/lib/base-path";
 import { useId, useRef, useState } from "react";
 
 export function DocumentModal({
@@ -22,9 +23,11 @@ export function DocumentModal({
   const [unavailable, setUnavailable] = useState(false);
   const [imageIndex, setImageIndex] = useState(0);
   const image = images[imageIndex];
-  const preview = unavailable || !image
-    ? "/images/placeholders/credential-placeholder.png"
-    : image;
+  const preview = withBasePath(
+    unavailable || !image
+      ? "/images/placeholders/credential-placeholder.png"
+      : image,
+  );
 
   return (
     <>

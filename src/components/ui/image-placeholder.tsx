@@ -1,6 +1,7 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { ImageWithFallbackClient } from "@/components/ui/image-with-fallback-client";
+import { withBasePath } from "@/lib/base-path";
 import type { PlaceholderKind } from "@/types/portfolio";
 
 const placeholderSources: Record<PlaceholderKind, string> = {
@@ -32,10 +33,10 @@ export function ImagePlaceholder({
 
   return (
     <ImageWithFallbackClient
-      src={src}
+      src={withBasePath(src)}
       alt={alt}
       label={label}
-      fallbackSrc={placeholderSources[kind]}
+      fallbackSrc={withBasePath(placeholderSources[kind])}
       className={className}
       sizes={sizes}
       kind={kind}
