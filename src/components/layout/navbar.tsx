@@ -11,7 +11,6 @@ const links = [
   ["Projects", "#projects"],
   ["Publications", "#publications"],
   ["Education", "#education"],
-  ["Leadership", "#leadership"],
   ["Skills", "#skills"],
 ];
 

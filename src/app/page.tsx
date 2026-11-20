@@ -3,7 +3,6 @@ import { ContactSection } from "@/components/sections/contact-section";
 import { EducationSection } from "@/components/sections/education-section";
 import { ExperienceSection } from "@/components/sections/experience-section";
 import { HeroSection } from "@/components/sections/hero-section";
-import { LeadershipSection } from "@/components/sections/leadership-section";
 import { ProjectsSection } from "@/components/sections/projects-section";
 import { PublicationsSection } from "@/components/sections/publications-section";
 import { ResearchExperienceSection } from "@/components/sections/research-experience-section";
@@ -23,7 +22,6 @@ export default function Home() {
         <ProjectsSection />
         <PublicationsSection />
         <EducationSection />
-        <LeadershipSection />
         <SkillsSection />
         <ContactSection />
       </main>
