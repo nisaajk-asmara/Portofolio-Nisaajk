@@ -1,4 +1,4 @@
-import { activities, organizations } from "@/data/leadership";
+import { organizations } from "@/data/leadership";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
 
@@ -20,21 +20,6 @@ export function LeadershipSection() {
                 <p className="organization-card__description">{organization.description}</p>
               </article>
             </Reveal>
-          ))}
-        </div>
-        <div className="activity-list">
-          <p className="activity-list__heading">Academic Activities &amp; Symposiums Index</p>
-          {activities.map((activity) => (
-            <div className="activity-row" key={`${activity.period}-${activity.name}`}>
-              <div className="activity-row__content">
-                <span className="activity-row__period">{activity.period}</span>
-                <div className="activity-row__main">
-                  <span className="activity-row__role">{activity.role}</span>
-                  <strong>{activity.name}</strong>
-                  {activity.detail && <small>{activity.detail}</small>}
-                </div>
-              </div>
-            </div>
           ))}
         </div>
       </div>
